@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>HTML5 course's task</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- css -->
+		<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="app/styles/main.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>HTML5 course</h1>
+				</div>
+				<div class="col-md-12">
+					<ul class="nav nav-pills nav-stacked col-md-1">
+						<li class="active">
+							<a href="#tab1" class="text-center" data-toggle="tab">Statistic</a>
+						</li>
+						<li>
+							<a href="#tab2" class="text-center" data-toggle="tab">Table</a>
+						</li>
+						<li>
+							<a href="#tab3" class="text-center" data-toggle="tab">tab 3</a>
+						</li>
+					</ul>
+					<div class="tab-content col-md-11">
+						<div id="tab1" class="tab-pane active">
+							<button id="runWorker" class="btn btn-success">Start</button>
+							<button id="reset" class="btn btn-warning">Reset</button>
+							<ul>
+								<li id="lastNumber"></li>
+								<li id="foundNumbers"></li>
+								<li id="runTimes"></li>
+								<li id="operationTime"></li>
+							</ul>
+						</div>
+						<div id="tab2" class="tab-pane">
+							<button id="refreshTable" class="btn btn-default" 
+									style="margin: 0 0 15px 15px;">Refresh table data</button>
+							
+							<div class="container">
+								<div class="row">
+									<table id="primesTable" class="table table-bordered">
+										<thead>
+											<tr>
+												<th>Prime number</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>2</td>
+											</tr>
+											<tr>
+												<td>3</td>
+											</tr>
+											<tr>
+												<td>4</td>
+											</tr>
+											<tr>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td>6</td>
+											</tr>
+											<tr>
+												<td>7</td>
+											</tr>
+											<tr>
+												<td>8</td>
+											</tr>
+											<tr>
+												<td>9</td>
+											</tr>
+											<tr>
+												<td>10</td>
+											</tr>
+											<tr>
+												<td>11</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>		
+
+						</div>
+						<div id="tab3" class="tab-pane">
+							tab 3
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- js -->
+		<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="vendor/jquery/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="vendor/paging.js"></script>
+
+		<script type="text/javascript" src="app/scripts/statisticStorage.js"></script>
+		<script type="text/javascript" src="app/scripts/numberStorage.js"></script>
+		<script type="text/javascript" src="app/scripts/primeNumbersWorker.js"></script>
+		<script type="text/javascript" src="app/scripts/app.js"></script>
+	</body>
+</html>

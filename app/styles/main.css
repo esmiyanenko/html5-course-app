@@ -1,0 +1,20 @@
+.paging-nav {
+	margin: 0 auto;
+	text-align: left;
+	padding-top: 2px;
+}
+
+.paging-nav a {
+	margin: 0px 1px;
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px 17px;
+	background: #91b9e6;
+	color: white;
+	border-radius: 3px;
+}
+
+.paging-nav .selected-page {
+	background: #187ed5;
+	font-weight: bold;
+}
